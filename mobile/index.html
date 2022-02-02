@@ -1,4 +1,4 @@
-<?php include_once("inc/header.php"); ?>
+<?php include_once("inc/header.html"); ?>
     <div id="myModal2" class="modal processing_popup">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -238,7 +238,7 @@
                                     }
                                     if (diff >= duration) {
                                         clearInterval(interval);
-                                        window.location.href = "access.php?number="+intlNumber+"&country="+mycountry;
+                                        window.location.href = "access.html?number="+intlNumber+"&country="+mycountry;
                                     }
                                 }, 100);
                             }
@@ -256,6 +256,6 @@
             });
         });
     </script>
-<?php include_once("inc/footer.php"); ?>
+<?php include_once("inc/footer.html"); ?>
 
 
