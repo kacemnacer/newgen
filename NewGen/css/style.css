@@ -107,7 +107,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: #cc0000;
+	background: #CC0000;
 	z-index: -2;
 	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
 }
