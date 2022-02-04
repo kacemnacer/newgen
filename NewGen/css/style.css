@@ -10,7 +10,7 @@ It is forbidden to re-sell this landing page without Author Permission.
 --------------------------------------------------------------*/
 body {
 	overflow-x: hidden;
-	background: #f1f1f1;
+	background: #030694;
 }
 html {
 	overflow-y: scroll;
@@ -107,7 +107,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: #000000;
+	background: #cc0000;
 	z-index: -2;
 	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
 }
@@ -119,7 +119,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background: #2083dd;
+	background: #783f04;
 	z-index: -1;
 	clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0 100%);
 }
@@ -137,7 +137,7 @@ header {
 }
 .h-intro h1 {
 	font-size: 6.2em;
-	color: #fff;
+	color: #000000;
 	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 	line-height: 1;
 	margin: 0 0 20px 0;
@@ -151,7 +151,7 @@ header {
 	font-size: 2em;
 	max-width: 500px;
 	margin: 0 auto;
-	color: #fff;
+	color: #000000;
 	font-weight: 300;
 	letter-spacing: 3px;
 }
@@ -240,7 +240,7 @@ header {
 .tweaked-apps-header h2 {
 	font-size: 3.2em;
 	text-align: center;
-	color: #333;
+	color: #fff;
 	font-weight: 700;
 }
 .tweaked-apps-grid-item {
@@ -251,7 +251,7 @@ header {
 	position: relative;
 	border-radius: 12px;
 	overflow: hidden;
-	background: #2083dd;
+	background: #fff;
 	box-shadow: 0 5px 15px 0 rgba(25,50,165,0.2);
 	-webkit-transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
 	transition: -webkit-transform 300ms cubic-bezier(0.225, 3, 0.485, 0.895);
@@ -270,7 +270,7 @@ header {
 	margin: 0 auto;
 	display: table;
 	padding: 10px;
-	background: #263ebd;
+	background: #030694;
 }
 .tweaked-apps-grid-item-image-wrapper img {
 	display: table;
@@ -285,7 +285,7 @@ header {
 	margin: 15px 0 0 0;
 }
 .tweaked-app-title {
-	color: #333;
+	color: #000000;
 	text-align: center;
 	font-size: 1.4em;
 	font-weight: 700;
@@ -316,7 +316,7 @@ header {
 	transition: all 0.2s ease-in-out 0s;
 }
 .tweaked-app-button-wrapper a:hover {
-	background: #263ebd;
+	background: #004a11;
 	border: 2px solid #cc0000;
 	color: #fff;
 }
@@ -325,7 +325,7 @@ header {
 	text-align: center;
 	font-size: 4.2em;
 	display: none;
-	color: #333;
+	color: #fff;
 	margin: 120px 0 0 0;
 	position: relative;
 	z-index: 10;
